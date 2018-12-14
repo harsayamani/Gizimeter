@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Panduan"
+        android:title="Panduan"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_book_black_24dp" />
+
+    <item android:id="@+id/Tentang"
+        android:title="Tentang"
+        android:icon="@drawable/ic_info_black_24dp"/>
+
+</menu>

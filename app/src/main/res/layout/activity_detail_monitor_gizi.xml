@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:background="@color/colorWhite"
+                android:layout_marginTop="10sp"
+                android:padding="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text = "Nama Pengguna"
+                        android:textColor="#6e7b8b"
+                        android:textStyle="bold"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:id="@+id/tvNamaLengkap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "TextView "
+                        android:textColor="@color/colorGray"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Jenis Kelamin"
+                        android:textColor="#6e7b8b"
+                        android:textStyle="bold"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:id="@+id/tvJenisKelamin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "TextView"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorGray" />
+
+
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Tanggal Cek"
+                        android:textColor="#6e7b8b"
+                        android:textStyle="bold"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:id="@+id/tvTanggalCek"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "TextView "
+                        android:textSize="17sp"
+                        android:textColor="@color/colorGray" />
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Umur Tahun"
+                        android:textColor="#6e7b8b"
+                        android:textStyle="bold"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:id="@+id/tvUmurTahun"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "TextView "
+                        android:textSize="17sp"
+                        android:textColor="@color/colorGray" />
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Umur Bulan"
+                        android:textColor="#6e7b8b"
+                        android:textStyle="bold"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:id="@+id/tvUmurBulan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "TextView "
+                        android:textSize="17sp"
+                        android:textColor="@color/colorGray" />
+
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Berat Badan"
+                        android:textSize="17sp"
+                        android:textColor="#6e7b8b"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvBeratBadan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "TextView "
+                        android:textSize="17sp"
+                        android:textColor="@color/colorGray" />
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Tinggi Badan"
+                        android:textColor="#6e7b8b"
+                        android:textStyle="bold"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:textSize="17sp"
+                        android:id="@+id/tvTinggiBadan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "TextView "
+                        android:textColor="@color/colorGray" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="10sp"
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "Status Gizi"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="center"
+                android:background="@color/colorGreen"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvStatusGizi"
+                android:textAlignment="center"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "TextView "
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/tvIMT"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text = "TextView "
+                android:textAlignment="center"
+                android:background="@color/colorPinky"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Saran Kesehatan : "
+                        android:textColor="@color/colorGray"
+                        android:background="@color/colorAccent"
+                        android:textAlignment="center"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:id="@+id/saranGizi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:textSize="17sp"
+                        android:padding="20sp"
+                        android:text="Text View"
+                        android:textColor="@color/colorGray"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_update"
+                android:background="@color/colorGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Data"/>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

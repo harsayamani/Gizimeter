@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.harsayamani.gizimeter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".gizimeter_main_activity"
+            android:label="Gizimeter"
+            android:theme="@style/AppTheme7" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gizimeter_kamus_gizi"
+            android:parentActivityName=".gizimeter_main_activity"
+            android:theme="@style/AppTheme7" />
+        <activity
+            android:name=".gizimeter_monitor_gizi"
+            android:parentActivityName=".gizimeter_list_data"
+            android:theme="@style/AppTheme7" />
+        <activity
+            android:name=".gizimeter_artikel_gizi"
+            android:label="Artikel Gizi"
+            android:parentActivityName=".gizimeter_main_activity"
+            android:theme="@style/AppTheme6" />
+        <activity
+            android:name=".gizimeter_list_data"
+            android:label="List Data"
+            android:parentActivityName=".gizimeter_main_activity"
+            android:theme="@style/AppTheme6" />
+        <activity
+            android:name=".gizimeter_detail_bahan"
+            android:label="Detail Bahan Makanan"
+            android:parentActivityName=".gizimeter_kamus_gizi"
+            android:theme="@style/AppTheme7" />
+        <activity
+            android:name=".gizimeter_detail_monitor_gizi"
+            android:label="Hasil Status Gizi"
+            android:parentActivityName=".gizimeter_list_data"
+            android:theme="@style/AppTheme6" />
+        <activity
+            android:name=".gizimeter_update_monitor_gizi"
+            android:parentActivityName=".gizimeter_detail_monitor_gizi"
+            android:theme="@style/AppTheme7" />
+        <activity
+            android:name=".gizimeter_monitor_gizi2"
+            android:parentActivityName=".gizimeter_main_activity"
+            android:theme="@style/AppTheme7"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".gizimeter_detail_monitor_gizi2"
+            android:label="Detail Monitoring Gizi"
+            android:parentActivityName=".gizimeter_main_activity"
+            android:theme="@style/AppTheme7"
+            tools:targetApi="jelly_bean" />
+        <activity android:name=".gizimeter_panduan_penggunaan"
+            android:theme="@style/AppTheme6"
+            android:label="Panduan Penggunaan"
+            android:parentActivityName=".gizimeter_main_activity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gizimeter_monitor_gizi2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140sp"
+        android:background="@color/colorBlueGray"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Ayo cek status \n gizimu secara \n berkala !! \n\n Untuk usia 5-18\n tahun"
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorWhite"/>
+        <ImageView
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="20sp"
+            android:layout_width="100sp"
+            android:layout_height="120sp"
+            android:src="@drawable/smartphone"/>
+        <ImageView
+            android:layout_marginTop="15sp"
+            android:layout_width="100sp"
+            android:layout_height="120sp"
+            android:src="@drawable/magnifying_glass"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:editable="false"
+                        android:layout_marginBottom="20sp"
+                        android:id="@+id/etTanggal"
+                        android:layout_width="215sp"
+                        android:layout_height="50sp"
+                        android:hint=" Tanggal Cek"
+                        android:inputType="date"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:drawableLeft="@drawable/ic_event_black_24dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/btnPilihTanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pilih"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:text=" Jenis Kelamin"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/ic_wc_black_24dp"/>
+
+            <RadioGroup
+                android:id="@+id/rgJenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/Rblakilaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Laki-Laki "
+                    android:textSize="17sp"/>
+                <RadioButton
+                    android:id="@+id/Rbperempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Perempuan"
+                    android:textSize="17sp"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/etUmurTahun"
+                        android:layout_width="150sp"
+                        android:layout_height="50sp"
+                        android:hint="Umur Tahun"
+                        android:inputType="numberDecimal"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/etUmurBulan"
+                        android:layout_marginLeft="35sp"
+                        android:layout_width="150sp"
+                        android:layout_height="50sp"
+                        android:hint="Umur Bulan"
+                        android:inputType="numberDecimal"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_berat_badan"
+                        android:layout_width="150sp"
+                        android:layout_height="50sp"
+                        android:hint="Berat Badan (kg)"
+                        android:inputType="numberDecimal"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_tinggi_badan"
+                        android:layout_marginLeft="35sp"
+                        android:layout_width="150sp"
+                        android:layout_height="50sp"
+                        android:hint="Tinggi Badan (cm)"
+                        android:inputType="numberDecimal"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnHasilMonitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Monitor Sekarang"
+                android:background="@drawable/backgroun_button"
+                style="@style/Theme.AppCompat.DayNight" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>

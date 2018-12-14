@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gizimeter_main_activity"
+    android:background="@drawable/back1"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/appbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite">
+            <TextView
+                android:id="@+id/artikel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Artikel Gizi"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="185sp" />
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="140dp"
+                android:id="@+id/dotsLayout"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5sp"
+            android:background="@color/colorWhite" />
+
+        <ScrollView
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_hitung_gizi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_marginLeft="20sp"
+                            android:layout_gravity="center"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginBottom="5sp"
+                            android:src="@drawable/hitung_gizi"
+                            android:layout_marginStart="20sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginLeft="30sp"
+                                android:layout_marginTop="20sp"
+                                android:fontFamily="monospace"
+                                android:textSize="20sp"
+                                android:textColor="@color/colorGray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CEK STATUS GIZI"
+                                android:layout_marginStart="30sp" />
+                            <TextView
+                                android:layout_marginLeft="30sp"
+                                android:textSize="17sp"
+                                android:textColor="@color/colorGray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ayo cek status gizimu\ndisini !"
+                                android:layout_marginStart="30sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="5sp"
+                    android:id="@+id/btn_monitor_gizi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_marginLeft="20sp"
+                            android:layout_gravity="center"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginBottom="5sp"
+                            android:src="@drawable/monitor_gizi"
+                            android:layout_marginStart="20sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginLeft="30sp"
+                                android:layout_marginTop="20sp"
+                                android:fontFamily="monospace"
+                                android:textSize="20sp"
+                                android:textColor="@color/colorGray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MONITORING GIZI"
+                                android:layout_marginStart="30sp" />
+                            <TextView
+                                android:layout_marginLeft="30sp"
+                                android:textSize="17sp"
+                                android:textColor="@color/colorGray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ayo monitor gizimu\nsecara berkala"
+                                android:layout_marginStart="30sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                android:layout_marginTop="5sp"
+                android:id="@+id/btn_riwayat_hasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginLeft="20sp"
+                        android:layout_gravity="center"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/hasil_result"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_marginLeft="30sp"
+                            android:layout_marginTop="20sp"
+                            android:fontFamily="monospace"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HASIL MONITORING"
+                            android:layout_marginStart="30sp" />
+                        <TextView
+                            android:layout_marginLeft="30sp"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hasil monitor gizi\nterbaru"
+                            android:layout_marginStart="30sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="5sp"
+                    android:id="@+id/btn_kamus_gizi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_marginLeft="20sp"
+                            android:layout_gravity="center"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginBottom="5sp"
+                            android:src="@drawable/kamus_gizi"
+                            android:layout_marginStart="20sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginLeft="30sp"
+                                android:layout_marginTop="20sp"
+                                android:fontFamily="monospace"
+                                android:textSize="20sp"
+                                android:textColor="@color/colorGray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="KAMUS GIZI"
+                                android:layout_marginStart="30sp" />
+                            <TextView
+                                android:layout_marginLeft="30sp"
+                                android:textSize="17sp"
+                                android:textColor="@color/colorGray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kamus kandungan gizi\ndalam bahan makanan"
+                                android:layout_marginStart="30sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
